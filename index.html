@@ -8,7 +8,7 @@
     <!-- google fonts -->
     <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> -->
     <!-- fontawesome -->
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <!-- boostrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <!-- css -->
@@ -17,42 +17,110 @@
   <body>
     <div class="wrapper d-flex">
       <main id="main_content" class="d-flex">
-        <aside class="main_menu">Sidebar</aside>
+        <aside class="main_menu">
+          <div class="logo d-flex">
+            <img src="assets/img/logo.svg" alt="">
+          </div>
+          <!-- /.logo -->
+
+          <div class="menu">
+            <ul class="list-group">
+              <li class="list-group-item home">
+                <a href="#">
+                  <img src="assets/img/home.svg" alt="">
+                  Home
+                </a>
+              </li>
+              <li class="list-group-item search">
+                <a href="#">
+                  <img src="assets/img/search.svg" alt="">
+                  Cerca
+                </a>
+              </li>
+              <li class="list-group-item libreria">
+                <a href="#">
+                  <img src="assets/img/libreria.svg" alt="">
+                  La tua libreria
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.menu -->
+
+          <div class="playlist">
+            <h4>PLAYLIST</h4>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-plus-square fa-2x fa-fw"></i>Crea Playlist</li>
+              <li>Nuova Playlist</li>
+              <li>Nuova Playlist</li>
+              <li>Nuova Playlist</li>
+              <li>Nuova Playlist</li>
+              <li>Nuova Playlist</li>
+              <li>Nuova Playlist</li>
+              <li>Nuova Playlist</li>
+            </ul>
+          </div>
+          <!-- /.playlist -->
+          
+          <div class="app d-flex">
+            <img src="assets/img/download.svg" alt="">
+            Installa app
+          </div>
+          <!-- /.app -->
+          <div class="profilo d-flex">
+            <img src="assets/img/profile.svg" alt="">
+            John Doe
+          </div>
+          <!-- /.profilo -->
+
+        </aside>
         <section class="covers_section">
           <div class="subscribe_banner d-flex">
             <a href="#" class="btn btn-default" role="button">effettua l'upgrade</a>
           </div>
           <nav class="d-flex">
-            <a href="#">lorem</a>
-            <a href="#">lorem</a>
-            <a href="#">lorem</a>
-            <a href="#">lorem</a>
-            <a href="#">lorem</a>
-            <a href="#">lorem</a>
+            <a href="#">in evidenza</a>
+            <a href="#">podcast</a>
+            <a href="#">classifiche</a>
+            <a href="#">generi e mood</a>
+            <a href="#">nuove uscite</a>
+            <a href="#">scopri</a>
           </nav>
 
-          <h2>titolo</h2>
-          <div id="recently_player" class="d-flex">
-            <div class="items"></div>
-            <div class="items"></div>
-            <div class="items"></div>
-            <div class="items"></div>
-            <div class="items"></div>
-            <div class="items"></div>
+          <h2>Recently player</h2>
+          <div id="recently_player" class="d-flex text-center">
+            <div class="card">
+              <img src="assets/img/recently/metal_lifting.jpg" alt="">
+              <h6>Heavy Metal</h6>
+              <p>Subtitle</p>
+            </div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
           </div>
 
-          <h2>titolo</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+          <h2>Creato per John Doe</h2>
+          <p>Più ascolti, più saranno accurati i suggerimenti.</p>
           <div id="created_for" class="d-flex">
-            <div class="items"></div>
-            <div class="items"></div>
+            <div class="card">
+              <img src="assets/img/recently/metal_lifting.jpg" alt="">
+              <h6>Heavy Metal</h6>
+              <p>Subtitle</p>
+            </div>
+            <div class="card">
+              <img src="assets/img/recently/metal_lifting.jpg" alt="">
+              <h6>Heavy Metal</h6>
+              <p>Subtitle</p>
+            </div>
           </div>
 
-          <h2>titolo</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+          <h2>Artisti più popolari</h2>
+          <p>Più ascolti, più saranno accurati i suggerimenti.</p>
           <div id="popular_artists" class="d-flex">
-            <div class="items"></div>
-            <div class="items"></div>
+            <div class="card"></div>
+            <div class="card"></div>
           </div>
       </section>
       </main>
