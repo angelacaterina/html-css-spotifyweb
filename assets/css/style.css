@@ -1,0 +1,95 @@
+body{
+  background-color: #333;
+  color:white;
+}
+
+/* UTILITY DISPLAY */
+.d-flex{
+  display: flex;
+}
+
+/**************
+*   WRAPPER
+**************/
+.wrapper{
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*********
+*  MAIN
+**********/
+#main_content{
+  height: calc(100% - 60px);
+}
+
+/* ASIDE */
+aside.main_menu{
+  min-width: 200px;
+  background-color: black;
+}
+
+/* SECTION */
+.covers_section{
+  width: calc(100% - 200px);
+  background-color: aquamarine;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 20px;
+  padding-top: 60px;
+  /* margin-top: 60px; */
+}
+
+/* .subscribe_banner */
+.subscribe_banner{
+  width: calc(100% - 200px);
+  height: 60px;
+  background-color: #ff000052;
+  position: fixed;
+  top: 0;
+  right: 0;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* nav */
+nav{
+  justify-content: center;
+}
+nav > a{
+  padding: 10px;
+}
+
+/* #recently_player */
+#recently_player{
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+}
+.items{
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+}
+
+/* #created_for */
+#created_for .items {
+  margin-right: 20px;
+}
+
+/* #popular_artists */
+#popular_artists .items{
+  margin-right: 20px;
+}
+
+/**********
+*  FOOTER
+**********/
+footer#site_footer{
+  height: 60px;
+  background-color: yellowgreen;
+  /* position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%; */
+}
