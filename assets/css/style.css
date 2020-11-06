@@ -7,11 +7,27 @@ body{
 .d-flex{
   display: flex;
 }
-/* TYPOGRAPHY */
-
-p{
-  font-size: 10px;
+.clearfix{
+  content: "";
+  display: table;
+  clear: both;
 }
+.float_right{
+  float: right;
+}
+/* TYPOGRAPHY */
+a:hover{
+  text-decoration: none;
+}
+p{
+  /* font-size: 10px; */
+}
+
+/* UTILITY */
+.pr_1{
+  padding-right: 1rem;
+}
+
 /**************
 *   WRAPPER
 **************/
@@ -34,11 +50,11 @@ aside.main_menu{
   background-color: black;
   flex-direction: column;
   justify-content: space-between;
+  overflow-y: auto;
 }
-/* .logo_menu */
-.logo_menu{
 
-}
+/* .logo_menu */
+
 /* .logo */
 .logo{
   height: 80px;
@@ -48,16 +64,17 @@ aside.main_menu{
 .logo img{
   height: 40px;
 }
+
 /* .menu */
-.list-group li a{
-  color: white;
-}
-.list-group a:hover{
-  text-decoration: none;
-}
 .list-group-item:first-child,
 .list-group-item:last-child {
   border-radius: 0;
+}
+.list-group a{
+  color: #a3a3a3;
+}
+.list-group a:hover {
+  color: white;
 }
 .list-group-item {
   background: none;
@@ -67,36 +84,43 @@ aside.main_menu{
 .list-group .home{
   border-left: 2px solid #ADFF2F;
 }
-.list-group .search:hover, .list-group .libreria:hover{
-  border-left: 2px solid #ADFF2F;
+.list-group .home a{
+  color: white;
 }
 
+.list-group .search:hover,
+.list-group .libreria:hover {
+  border-left: 2px solid #ADFF2F;
+}
 .list-group-item img{
   height: 24px;
 }
 
 /* .playlist */
 .playlist{
-
+  height: auto;
   padding-left: 20px;
 }
 .playlist li{
+  color: #A3A3A3;
   line-height: 2;
-  overflow-y: scroll;
+}
+.playlist li:hover{
+  color: white;
+  cursor: pointer;
 }
 
 
 /* .main_menu_footer */
 .main_menu_footer{
-  padding: 10px 20px;
-  
+  padding: 0 20px;
   overflow-y: hidden;
 }
+
 /* .app */
 .app{
   padding-bottom: 5px;
   border-bottom: 1px solid white;
-
 }
 .app img{
   height: 20px;
@@ -106,8 +130,16 @@ aside.main_menu{
 /* .profilo */
 .profilo{
   padding-top: 5px;
-
 }
+.profilo a, .app a{
+  color: #A3A3A3;
+}
+
+.profilo a:hover, .app a:hover{
+  color: white;
+}
+
+
 .profilo img{
   height: 20px;
   margin-right: 5px;
@@ -146,6 +178,11 @@ aside.main_menu{
   border: 1px solid white;
   border-radius: 25px;
 }
+.subscribe_banner a:hover{
+  color: white;
+  background: none;
+  transform: scale(1.1);
+}
 
 /* nav */
 nav{
@@ -174,7 +211,6 @@ nav > a{
 /* #created_for */
 #created_for .card {
   margin-right: 20px;
-
 }
 
 /* #popular_artists */
