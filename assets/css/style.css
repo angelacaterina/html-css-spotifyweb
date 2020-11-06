@@ -17,6 +17,7 @@ body{
 }
 /* TYPOGRAPHY */
 a:hover{
+  color: white;
   text-decoration: none;
 }
 p{
@@ -26,6 +27,12 @@ p{
 /* UTILITY */
 .pr_1{
   padding-right: 1rem;
+}
+.mr_1{
+  margin-right: 1rem;
+}
+.ml_1{
+  margin-left: 1rem;
 }
 
 /**************
@@ -78,6 +85,7 @@ aside.main_menu{
 }
 .list-group-item {
   background: none;
+  padding: 5px 15px;
   border: none;
   cursor: pointer;
 }
@@ -87,7 +95,6 @@ aside.main_menu{
 .list-group .home a{
   color: white;
 }
-
 .list-group .search:hover,
 .list-group .libreria:hover {
   border-left: 2px solid #ADFF2F;
@@ -109,7 +116,6 @@ aside.main_menu{
   color: white;
   cursor: pointer;
 }
-
 
 /* .main_menu_footer */
 .main_menu_footer{
@@ -134,12 +140,9 @@ aside.main_menu{
 .profilo a, .app a{
   color: #A3A3A3;
 }
-
 .profilo a:hover, .app a:hover{
   color: white;
 }
-
-
 .profilo img{
   height: 20px;
   margin-right: 5px;
@@ -189,9 +192,12 @@ nav{
   justify-content: center;
 }
 nav > a{
-  color: white;
+  color: #a3a3a3;
   text-transform: uppercase;
   padding: 10px;
+}
+nav > a:hover{
+  border-bottom: 2px solid #ADFF2F;
 }
 
 /* #recently_player */
@@ -199,24 +205,50 @@ nav > a{
   /* flex-wrap: wrap; */
   justify-content: space-between;
 }
-.card{
-  width: 200px;
-  height: 250px;
-  background-color: black;
+.items{
+  width: 190px;
+  height: auto;
 }
-.card img{
+#recently_player .items,
+#created_for .items,
+#popular_artists .items {
+  /* display: inline-block; */
+  position: relative;
+  cursor: pointer;
+}
+#recently_player .items img{
   width: 100%;
 }
 
-/* #created_for */
-#created_for .card {
-  margin-right: 20px;
+.image_play{
+  border: 4px solid white;
+  border-radius: 50%;
+  padding: 5px 0 5px 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-/* #popular_artists */
-#popular_artists .card{
-  margin-right: 20px;
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 190px;
+  color: white;
+  opacity: 0;
 }
+.overlay:hover{
+  opacity: 1;
+}
+
+
+/* #created_for */
+
+/* #popular_artists */
+
 
 /**********
 *  FOOTER
