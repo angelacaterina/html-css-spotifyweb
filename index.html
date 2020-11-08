@@ -20,48 +20,49 @@
         <aside class="main_menu d-flex">
           <div class="logo_menu">
             <div class="logo d-flex">
-              <a href="#"><img src="assets/img/logo.svg" alt=""></a>
+              <a href="#"><img src="assets/img/logo.svg" alt="" class="d_none_xs"></a>
+              <a href="#"><img src="assets/img/logo-small.svg" alt="" class="d_none_s"></a><!-- logo small -->
             </div><!-- /.logo -->
 
             <div class="menu">
               <ul class="list-group">
                 <li class="list-group-item home">
                   <a href="#">
-                    <img src="assets/img/home.svg" alt="" class="pr_1">Home
+                    <img src="assets/img/home.svg" alt="" class="pr_1">
+                    <span class="d_none_xs">Home</span>
                   </a>
                 </li>
                 <li class="list-group-item search">
                   <a href="#">
-                    <img src="assets/img/search.svg" alt="" class="pr_1">Cerca
+                    <img src="assets/img/search.svg" alt="" class="pr_1">
+                    <span class="d_none_xs">Cerca</span>
                   </a>
                 </li>
                 <li class="list-group-item libreria">
                   <a href="#">
-                    <img src="assets/img/libreria.svg" alt="" class="pr_1">La tua libreria
+                    <img src="assets/img/libreria.svg" alt="" class="pr_1">
+                    <span class="d_none_xs">La tua libreria</span>
                   </a>
                 </li>
               </ul>
             </div><!-- /.menu -->
 
-            <div class="playlist">
+            <div class="playlist d_none_xs">
               <h5>PLAYLIST</h5>
-              <div class="">
-                <ul class="list-unstyled">
-                  <li class="clearfix">
-                    <i class="fas fa-plus-square fa-2x fa-fw pr_1"></i>
-                    <span class="float_right">Crea Playlist</span>
-                  </li>
-                  <li>Nuova Playlist</li>
-                  <li>Nuova Playlist</li>
-                  <li>Nuova Playlist</li>
-                  <li>Nuova Playlist</li>
-                  <li>Nuova Playlist</li>
-                  <li>Nuova Playlist</li>
-                  <li>Nuova Playlist</li>
-                </ul>
-                </div><!-- /.playlist -->
-              </div>
-
+              <ul class="list-unstyled">
+                <li class="clearfix">
+                  <i class="fas fa-plus-square fa-2x fa-fw pr_1"></i>
+                  <span class="float_right">Crea Playlist</span>
+                </li>
+                <li>Nuova Playlist</li>
+                <li>Nuova Playlist</li>
+                <li>Nuova Playlist</li>
+                <li>Nuova Playlist</li>
+                <li>Nuova Playlist</li>
+                <li>Nuova Playlist</li>
+                <li>Nuova Playlist</li>
+              </ul>
+            </div><!-- /.playlist -->
           </div>
           <!-- /.logo_menu -->
 
@@ -69,23 +70,19 @@
             <div class="app">
               <a href="#">
                 <img src="assets/img/download.svg" alt="">
-                Installa app
+                <span class="d_none_xs">Installa app</span>
               </a>
-
-            </div>
-            <!-- /.app -->
+            </div><!-- /.app -->
             <div class="profilo">
               <a href="#">
                 <img src="assets/img/profile.svg" alt="">
-                John Doe
+                <span class="d_none_xs">John Doe</span>
               </a>
-            </div>
-            <!-- /.profilo -->
+            </div><!-- /.profilo -->
           </div>
           <!-- /.main_menu_foote -->
-
-
         </aside>
+        <!-- /aside.main_menu -->
         <section class="covers_section">
           <div class="subscribe_banner d-flex">
             <a href="#" class="btn btn-default" role="button">effettua l'upgrade</a>
@@ -102,85 +99,72 @@
 
           <h2>Recently played</h2>
           <div id="recently_player" class="d-flex text-center m_3">
-            <div class="items">
+            <div class="items mr_1">
               <div class="overlay">
                 <div class="image_play">
                   <i class="far fa-play-circle fa-4x fa-fw"></i>
                 </div>
-              </div>
-              <!-- /.overlay -->
+              </div><!-- /.overlay -->
               <img src="assets/img/recently/metal_lifting.jpg" alt="" class="img-responsive">
               <h4>Heavy Metal</h4>
               <p>Subtitle</p>
-            </div>
-            <!-- /.items -->
-
-            <div class="items">
+            </div><!-- /.items -->
+            <div class="items mr_1">
               <div class="overlay">
                 <div class="image_play">
                   <i class="far fa-play-circle fa-4x fa-fw"></i>
                 </div>
-              </div>
-              <!-- /.overlay -->
+              </div><!-- /.overlay -->
               <img src="assets/img/recently/player_left.jpg" alt="" class="img-responsive">
               <h4>HillTop Hoods</h4>
               <p>Subtitle</p>
-            </div>
-            <!-- /.items -->
+            </div><!-- /.items -->
 
-            <div class="items">
+            <div class="items mr_1">
               <div class="overlay">
                 <div class="image_play">
                   <i class="far fa-play-circle fa-4x fa-fw"></i>
                 </div>
-              </div>
-              <!-- /.overlay -->
+              </div><!-- /.overlay -->
               <img src="assets/img/recently/aquietplace.jpeg" alt="" class="img-responsive">
               <h4>A quiet place</h4>
               <p>Subtitle</p>
-            </div>
-            <!-- /.items -->
+            </div><!-- /.items -->
 
-            <div class="items">
+            <div class="items mr_1">
               <div class="overlay">
                 <div class="image_play">
                   <i class="far fa-play-circle fa-4x fa-fw"></i>
                 </div>
-              </div>
-              <!-- /.overlay -->
+              </div><!-- /.overlay -->
               <img src="assets/img/recently/split.jpeg" alt="" class="img-responsive">
               <h4>Split</h4>
               <p>Subtitle</p>
-            </div>
-            <!-- /.items -->
+            </div><!-- /.items -->
 
-            <div class="items">
+            <div class="items mr_1">
               <div class="overlay">
                 <div class="image_play">
                   <i class="far fa-play-circle fa-4x fa-fw"></i>
                 </div>
-              </div>
-              <!-- /.overlay -->
+              </div><!-- /.overlay -->
               <img src="assets/img/recently/cure.jpeg" alt="" class="img-responsive">
               <h4>A cure for wellness</h4>
               <p>Subtitle</p>
-            </div>
-            <!-- /.items -->
+            </div><!-- /.items -->
 
             <div class="items">
               <div class="overlay">
                 <div class="image_play">
                   <i class="far fa-play-circle fa-4x fa-fw"></i>
                 </div>
-              </div>
-              <!-- /.overlay -->
+              </div><!-- /.overlay -->
               <img src="assets/img/recently/sinister.jpeg" alt="" class="img-responsive">
               <h4>Sinister</h4>
               <p>Subtitle</p>
-            </div>
-            <!-- /.items -->
-
+            </div><!-- /.items -->
           </div>
+          <!-- /#recently_player -->
 
           <h2>Creato per John Doe</h2>
           <p>Più ascolti, più accurati saranno i suggerimenti.</p>
@@ -193,8 +177,7 @@
               </div><!-- /.overlay -->
               <img src="assets/img/creato/radar.jpeg" alt="" class="img-responsive">
               <h4>Release Radar</h4>
-            </div>
-            <!-- /.items -->
+            </div><!-- /.items -->
 
             <div class="items">
               <div class="overlay">
@@ -204,9 +187,9 @@
               </div><!-- /.overlay -->
               <img src="assets/img/creato/mixdaily.jpeg" alt="" class="img-responsive">
               <h4>Daily Mix 1</h4>
-            </div>
-            <!-- /.items -->
+            </div><!-- /.items -->
           </div>
+          <!-- /#created_for -->
 
           <h2>Artisti più popolari</h2>
           <p>Più ascolti, più accurati saranno i suggerimenti.</p>
@@ -219,8 +202,7 @@
               </div><!-- /.overlay -->
               <img src="assets/img/popular/youg.jpeg" alt="" class="img-responsive">
               <h4>Lana del Rey</h4>
-            </div>
-            <!-- /.items -->
+            </div><!-- /.items -->
 
             <div class="items">
               <div class="overlay">
@@ -230,11 +212,13 @@
               </div><!-- /.overlay -->
               <img src="assets/img/popular/einaudi.jpeg" alt="" class="img-responsive">
               <h4>Ludovico Einaudi</h4>
-            </div>
-            <!-- /.items -->
+            </div><!-- /.items -->
           </div>
+          <!-- /#popular_artists -->
         </section>
+        <!-- /.covers_section -->
       </main>
+      <!-- /#main_content -->
 
       <footer id="site_footer">
         <div class="player d-flex">
@@ -243,15 +227,13 @@
               <img src="assets/img/recently/sinister.jpeg" alt="" class="float_left">
               <h6>Sinister</h6>
               <p><small>Brano nome</small></p>
-            </div>
-            <!-- /.card_sing -->
+            </div><!-- /.card_sing -->
             <div class="icons">
               <i class="far fa-heart fa-fw"></i>
               <i class="far fa-folder fa-fw"></i>
-            </div>
-            <!-- /.icons -->
-
-          </div><!-- /.sing -->
+            </div><!-- /.icons -->
+          </div>
+          <!-- /.sing -->
           <div class="play_sing d-flex">
             <div class="icons_play d-flex">
               <i class="fas fa-random fa-fw"></i>
@@ -265,25 +247,26 @@
             <div class="playbar d-flex">
               <label>0:25</label>
               <div class="range_bar">
-                <input type="range" id="" name="" min="0" max="100" value="20">
+                <input type="range" min="0" max="100" value="20">
               </div>
               <label>4:35</label>
             </div>
             <!-- /.playbar -->
-          </div><!-- /.play_sing -->
+          </div>
+          <!-- /.play_sing -->
           <div class="other d-flex">
             <i class="fas fa-list-ul fa-fw"></i>
             <i class="fas fa-tv fa-fw"></i>
             <i class="fas fa-volume-up fa-fw"></i>
             <div class="range_bar">
-              <input type="range" id="" name="" min="0" max="100" value="20">
+              <input type="range" min="0" max="100" value="20">
             </div>
-          </div><!-- /.other -->
+          </div>
+          <!-- /.other -->
         </div>
         <!-- /.player -->
       </footer>
       <!-- /#site_footer -->
-
     </div>
     <!-- /.wrapper -->
   </body>
