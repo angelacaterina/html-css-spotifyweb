@@ -1,6 +1,6 @@
 body{
-  background-color: #333;
   color:white;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* UTILITY DISPLAY */
@@ -16,12 +16,22 @@ body{
   float: right;
 }
 /* TYPOGRAPHY */
+h2{
+  font-size: 26px;
+  font-weight: 800;
+}
+p{
+  color: #a3a3a3;
+  font-weight: 600;
+}
+#created_for p,
+#popular_artists p{
+  font-size: 12px;
+}
+
 a:hover{
   color: white;
   text-decoration: none;
-}
-p{
-  /* font-size: 10px; */
 }
 
 /* UTILITY */
@@ -33,6 +43,9 @@ p{
 }
 .ml_1{
   margin-left: 1rem;
+}
+.m_3{
+  margin: 3rem 0;
 }
 
 /**************
@@ -170,6 +183,7 @@ aside.main_menu{
   position: fixed;
   top: 0;
   right: 0;
+  z-index: 2;
   justify-content: flex-end;
   align-items: center;
 }
@@ -191,39 +205,37 @@ aside.main_menu{
 nav{
   justify-content: center;
 }
-nav > a{
+nav > a {
   color: #a3a3a3;
   text-transform: uppercase;
-  padding: 10px;
+  padding: 10px 10px 5px 10px;
 }
-nav > a:hover{
-  border-bottom: 2px solid #ADFF2F;
+nav > a:first-child hr{
+  display: block;
+}
+nav > a:hover:not(:first-child) hr{
+  display: block;
+}
+hr{
+  display: none;
+  width: 25px;
+  border: 1px solid #ADFF2F;
+  margin: 1px auto;
 }
 
-/* #recently_player */
-#recently_player{
-  /* flex-wrap: wrap; */
-  justify-content: space-between;
-}
+/*****************
+* OVERLAY SECTION
+*****************/
 .items{
   width: 190px;
   height: auto;
 }
-#recently_player .items,
-#created_for .items,
-#popular_artists .items {
-  /* display: inline-block; */
-  position: relative;
-  cursor: pointer;
-}
-#recently_player .items img{
-  width: 100%;
-}
 
 .image_play{
-  border: 4px solid white;
+  font-size: 17px;
+  padding: 7px 0 6px 7px;
+  border: 5px solid white;
   border-radius: 50%;
-  padding: 5px 0 5px 5px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -244,11 +256,37 @@ nav > a:hover{
   opacity: 1;
 }
 
+#recently_player .items,
+#created_for .items,
+#popular_artists .items {
+  /* display: inline-block; */
+  position: relative;
+  cursor: pointer;
+}
+/********************
+*  /OVERLAY SECTION
+********************/
+
+/* #recently_player */
+#recently_player{
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+}
+#recently_player .items img{
+  width: 100%;
+}
 
 /* #created_for */
 
-/* #popular_artists */
 
+
+/* #popular_artists */
+#popular_artists img{
+  border-radius: 50%;
+}
+#popular_artists .overlay{
+  border-radius: 50%;
+}
 
 /**********
 *  FOOTER
