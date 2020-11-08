@@ -15,10 +15,18 @@ body{
 .float_right{
   float: right;
 }
+.float_left{
+  float: left;
+}
 /* TYPOGRAPHY */
 h2{
   font-size: 26px;
   font-weight: 800;
+}
+h6{
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 p{
   color: #a3a3a3;
@@ -61,12 +69,12 @@ a:hover{
 *  MAIN
 **********/
 #main_content{
-  height: calc(100% - 60px);
+  height: calc(100% - 80px);
 }
 
 /* ASIDE */
 aside.main_menu{
-  min-width: 200px;
+  min-width: 250px;
   background-color: black;
   flex-direction: column;
   justify-content: space-between;
@@ -165,7 +173,7 @@ aside.main_menu{
 
 /* SECTION */
 .covers_section{
-  width: calc(100% - 200px);
+  width: calc(100% - 250px);
   background-color: #141922;
   overflow-y: auto;
   overflow-x: hidden;
@@ -176,7 +184,7 @@ aside.main_menu{
 
 /* .subscribe_banner */
 .subscribe_banner{
-  width: calc(100% - 200px);
+  width: calc(100% - 250px);
   height: 80px;
   text-transform: uppercase;
   background-color: rgba(0, 0, 0, 0.5);
@@ -227,15 +235,11 @@ hr{
 * OVERLAY SECTION
 *****************/
 .items{
-  width: 190px;
+  width: 185px;
   height: auto;
 }
 
 .image_play{
-  font-size: 17px;
-  padding: 7px 0 6px 7px;
-  border: 5px solid white;
-  border-radius: 50%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -278,8 +282,6 @@ hr{
 
 /* #created_for */
 
-
-
 /* #popular_artists */
 #popular_artists img{
   border-radius: 50%;
@@ -292,12 +294,74 @@ hr{
 *  FOOTER
 **********/
 footer#site_footer{
-  height: 60px;
+  height: 80px;
   background-color: #282828;
   z-index: 10;
+}
 
-  /* position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%; */
+footer#site_footer i{
+  margin: 0 5px;
+}
+
+
+
+
+/* .player */
+.player{
+  justify-content: space-between;
+}
+
+
+/* .sing */
+.sing{
+  width: 250px;
+  padding: 15px 0 15px 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.sing img{
+  height: 50px;
+  margin-right: 10px;
+}
+
+.card_sing{
+  width: 70%;
+}
+.icons{
+  width: 30%;
+}
+/* .play_sing */
+.play_sing{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.icons_play{
+  height: 30px;
+  align-items: center;
+}
+
+
+
+
+/* .playbar */
+.playbar{
+  width: 100%;
+  justify-content: center;
+}
+input {
+  margin: .4rem;
+}
+label{
+  margin: 0 10px;
+}
+
+
+/* .other */
+.other{
+  width: 16%;
+  align-items: center;
+
 }
