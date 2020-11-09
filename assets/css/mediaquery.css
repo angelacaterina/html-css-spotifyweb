@@ -1,0 +1,165 @@
+/* UTILITY */
+@media screen and (min-width: 768px){
+  .d_none_s{
+    display: none;
+  }
+}
+
+/************
+* MEDIA QUERY
+************/
+/* screen xs iphone */
+@media screen and (max-width: 767px) {
+  /* UTILITY */
+  .d_none_xs {
+    display: none;
+  }
+  .mr_1{
+    margin-right: 0;
+  }
+  h2{
+    font-size: 24px;
+  }
+  /*** MAIN ***/
+  /** ASIDE **/
+  aside.main_menu {
+    width: 55px;
+  }
+  /* .logo_menu */
+  /*.logo*/
+  .logo{
+    height: 50px;
+    padding: 16px;
+  }
+  .logo img,
+  .profilo img {
+    height: 24px;
+  }
+  /*.menu*/
+  .list-group .home,
+  .list-group .search:hover,
+  .list-group .libreria:hover {
+    border-left: 0;
+  }
+
+  /* .main_menu_footer */
+  /*.app*/
+  .app{
+    border: 0;
+  }
+
+  /** SECTION **/
+  .covers_section{
+    width: calc(100% - 55px);
+  }
+  /* .subscribe_banner */
+  .subscribe_banner{
+    width: calc(100% - 55px);
+  }
+  /* nav */
+  nav{
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  nav a{
+    font-size: 12px;
+    flex-basis: calc(100% / 3);
+  }
+  /* #recently_player */
+  #recently_player{
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #created_for,
+  #popular_artists{
+    justify-content: space-around;
+  }
+  .items{
+    flex-basis: 45%;
+  }
+
+  /*** FOOTER ***/
+  /** .sing **/
+  .sing,
+  .play_sing,
+  .other{
+    flex-basis: calc(100% / 3);
+  }
+  /* .card_sing */
+  .sing img{
+    height: 40px;
+
+  }
+  .card_sing{
+    width: 75%;
+  }
+  .icons{
+    width: 20%;
+    justify-content: flex-end;
+  }
+  .card_sing p{
+    margin-bottom: 0;
+    line-height: 1;
+  }
+  /* .icons */
+  .icons{
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+}
+
+/* sreen s tablet */
+@media screen and (min-width: 768px) and (max-width: 991px){
+  .mr_1{
+    margin-right: 0;
+  }
+  /** SECTION **/
+  /* nav */
+  nav{
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  nav a{
+    flex-basis: calc(100% / 3);
+  }
+
+  /* #recently_player */
+  #recently_player{
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #created_for,
+  #popular_artists{
+    justify-content: space-around;
+  }
+  .items{
+    flex-basis: 46%;
+  }
+}
+
+/* screen md desktop (medium) */
+@media screen and (min-width: 992px) and (max-width: 1199px){
+  .mr_1{
+    margin-right: 1rem;
+  }
+
+  /** SECTION **/
+  /* #recently_player */
+  #recently_player{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .items{
+    flex-basis: 23%;
+  }
+}
+
+/* screen lg desktop (large) */
+@media screen and (min-width: 1200px) {
+  .mr_1{
+    margin-right: 1.5rem;
+  }
+}

@@ -1,0 +1,53 @@
+h4{
+  font-size: 16px;
+}
+
+/* SECTION */
+.covers_section{
+  background: #121212;
+}
+
+/*****************
+* OVERLAY SECTION
+*****************/
+.items{
+  background-color: #151515;
+  border-radius: 6px;
+}
+.items:hover{
+  border-radius: 6px;
+  transform: scale(1.1);
+  background: #282828;
+  transition: 1s ease;
+}
+
+.items img{
+  padding: 15px 15px 0;
+}
+
+.image_play{
+  position: absolute;
+  top:0;
+  left: 0;
+  transform: translate(212%, 275%);
+}
+
+.fa-4x{
+  font-size: 3em;
+}
+
+.overlay{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  color:  #1db954;
+  transition: 1.5s;
+}
+
+.items p{
+  font-size: 12px;
+}
+
+#popular_artists img{
+  border-radius: 0;
+}

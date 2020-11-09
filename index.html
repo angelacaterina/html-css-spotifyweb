@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <!-- css -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="bonus/bonus.css">
+    <link rel="stylesheet" href="assets/css/mediaquery.css">
+    <!-- <link rel="stylesheet" href="bonus/bonus.css"> -->
   </head>
   <body>
     <div class="wrapper d-flex">
@@ -221,58 +222,56 @@
       </main>
       <!-- /#main_content -->
 
-      <footer id="site_footer">
-        <div class="player d-flex">
-          <div class="sing d-flex">
-            <div class="card_sing clearfix">
-              <img src="assets/img/recently/sinister.jpeg" alt="" class="float_left">
-              <h6>Sinister</h6>
-              <p><small>Brano nome</small></p>
-            </div><!-- /.card_sing -->
-            <div class="icons">
-              <i class="far fa-heart fa-fw"></i>
-              <i class="far fa-folder fa-fw"></i>
-            </div><!-- /.icons -->
+      <footer id="site_footer" class="d-flex">
+        <div class="sing d-flex">
+          <div class="card_sing clearfix">
+            <img src="assets/img/recently/sinister.jpeg" alt="" class="float_left">
+            <h6>Sinister</h6>
+            <p><small>Brano nome</small></p>
+          </div><!-- /.card_sing -->
+          <div class="icons">
+            <i class="far fa-heart fa-fw"></i>
+            <i class="far fa-folder fa-fw"></i>
+          </div><!-- /.icons -->
+        </div>
+        <!-- /.sing -->
+        <div class="play_sing d-flex">
+          <div class="icons_play d-flex">
+            <i class="fas fa-random fa-fw"></i>
+            <i class="fas fa-step-backward fa-fw"></i>
+            <i class="far fa-play-circle fa-2x fa-fw"></i>
+            <i class="fas fa-step-forward fa-fw"></i>
+            <i class="fas fa-redo-alt fa-fw"></i>
           </div>
-          <!-- /.sing -->
-          <div class="play_sing d-flex">
-            <div class="icons_play d-flex">
-              <i class="fas fa-random fa-fw"></i>
-              <i class="fas fa-step-backward fa-fw"></i>
-              <i class="far fa-play-circle fa-2x fa-fw"></i>
-              <i class="fas fa-step-forward fa-fw"></i>
-              <i class="fas fa-redo-alt fa-fw"></i>
-            </div>
-            <!-- /.icons_play -->
+          <!-- /.icons_play -->
 
-            <div class="playbar d-flex">
-              <span>0:25</span>
-              <div class="bg_lightgrey">
-                <div class="bg_grey">
-                  <div class="circle">
-                    <i class="fas fa-circle fa-fw"></i>
-                  </div>
-                </div>
-              </div>
-              <span>4:35</span>
-            </div>
-            <!-- /.playbar -->
-          </div>
-          <!-- /.play_sing -->
-          <div class="other d-flex">
-            <i class="fas fa-list-ul fa-fw"></i>
-            <i class="fas fa-tv fa-fw"></i>
-            <i class="fas fa-volume-up fa-fw"></i>
-            <div class="bg_lightgrey_volume">
+          <div class="playbar d-flex">
+            <span>0:25</span>
+            <div class="bg_lightgrey">
               <div class="bg_grey">
-                <div class="circle_volume">
+                <div class="circle">
                   <i class="fas fa-circle fa-fw"></i>
                 </div>
               </div>
             </div>
+            <span>4:35</span>
           </div>
-          <!-- /.other -->
+          <!-- /.playbar -->
         </div>
+        <!-- /.play_sing -->
+        <div class="other d-flex">
+          <i class="fas fa-list-ul fa-fw"></i>
+          <i class="fas fa-tv fa-fw"></i>
+          <i class="fas fa-volume-up fa-fw"></i>
+          <div class="bg_lightgrey_volume">
+            <div class="bg_grey">
+              <div class="circle_volume">
+                <i class="fas fa-circle fa-fw"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.other -->
         <!-- /.player -->
       </footer>
       <!-- /#site_footer -->
