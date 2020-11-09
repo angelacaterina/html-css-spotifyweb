@@ -47,7 +47,7 @@ a:hover{
   padding-right: 1rem;
 }
 .mr_1{
-  margin-right: 14px;
+  margin-right: 18px;
 }
 .ml_1{
   margin-left: 1rem;
@@ -74,7 +74,7 @@ a:hover{
 
 /* ASIDE */
 aside.main_menu{
-  width: 250px;
+  width: 230px;
   background-color: black;
   flex-direction: column;
   justify-content: space-between;
@@ -175,7 +175,7 @@ aside.main_menu{
 
 /* SECTION */
 .covers_section{
-  width: calc(100% - 250px);
+  width: calc(100% - 230px);
   background-color: #141922;
   overflow-y: auto;
   overflow-x: hidden;
@@ -186,7 +186,7 @@ aside.main_menu{
 
 /* .subscribe_banner */
 .subscribe_banner{
-  width: calc(100% - 250px);
+  width: calc(100% - 230px);
   height: 80px;
   text-transform: uppercase;
   background-color: rgba(0, 0, 0, 0.5);
@@ -255,7 +255,7 @@ hr{
   left: 0;
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
-  height: 190px;
+  height: 180px;
   color: white;
   opacity: 0;
 }
@@ -313,7 +313,7 @@ footer#site_footer i{
 
 /* .sing */
 .sing{
-  width: 250px;
+  width: 230px;
   margin: 15px 0 15px 20px;
   justify-content: space-between;
   align-items: center;
@@ -345,12 +345,51 @@ footer#site_footer i{
 .playbar{
   width: 100%;
   justify-content: center;
+  align-items: center;
+  flex-shrink: 1;
 }
-input {
-  margin: .4rem;
+.bg_lightgrey{
+  background-color: lightgrey;
+  width: 430px;
+  height: 5px;
+  border-radius: 10px;
 }
-label{
-  margin: 0 10px;
+.bg_lightgrey_volume{
+  background-color: lightgrey;
+  width: 300px;
+  height: 5px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+.bg_grey{
+  background-color: grey;
+  width: 20%;
+  height: 5px;
+  border-radius: 10px;
+  position: relative;
+}
+.circle{
+ display: none;
+ position: absolute;
+ top: -7px;
+ left: 70px;
+ color: grey;
+}
+
+.circle_volume{
+ display: none;
+ position: absolute;
+ top: -7px;
+ left: 5px;
+ color: grey;
+}
+.playbar:hover .circle,
+.bg_lightgrey_volume:hover .circle_volume{
+display: block;
+}
+
+.playbar span{
+  margin: 0 20px;
 }
 
 /* .other */
@@ -358,6 +397,10 @@ label{
   width: 16%;
   padding: 0 20px 0 0;
   align-items: center;
+}
+.play_sing i:hover,
+.other i:hover{
+  transform: scale(1.1);
 }
 
 
