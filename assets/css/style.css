@@ -136,6 +136,10 @@ aside.main_menu{
   cursor: pointer;
 }
 
+.list{
+  flex-direction: column;
+  overflow-y: scroll;
+}
 /* .main_menu_footer */
 .main_menu_footer{
   padding: 0 20px;

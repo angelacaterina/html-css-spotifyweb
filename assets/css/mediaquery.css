@@ -25,7 +25,12 @@
   aside.main_menu {
     width: 55px;
   }
-  /* .logo_menu */
+
+  .logo_menu img:hover,
+  .main_menu_footer img:hover{
+    transform: scale(1.2);
+  }
+
   /*.logo*/
   .logo{
     height: 50px;
@@ -108,7 +113,29 @@
 }
 
 @media screen and (max-width: 480px) {
+ .d_none_480{
+   display: none;
+ }
 
+ .mr_1{
+   margin-right: 0;
+ }
+
+ h2{
+   font-size: 22px;
+ }
+
+ nav{
+   flex-wrap: wrap;
+   text-align: center;
+ }
+ nav a{
+   flex-basis: calc(100% / 2);
+ }
+
+ .playbar{
+   width: 80%;
+ }
 }
 
 /* sreen s tablet */
