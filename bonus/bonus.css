@@ -14,6 +14,7 @@ h4{
   position: relative;
   background-color: #151515;
   border-radius: 6px;
+  padding: 15px;
 }
 .items:hover{
   border-radius: 6px;
@@ -21,23 +22,18 @@ h4{
   background: #282828;
   transition: 1s ease;
 }
-.items img{
-  padding: 15px 15px 0;
-}
 
 .card{
-  position: static;
+  width: 100%;
+  height: auto;
+  position: relative;
 }
 .image_play{
   position: absolute;
-  top:0;
-  left: 0;
-  transform: translate(212%, 275%);
+  top: 95%;
+  left: 95%;
+  transform: translate(-95%, -95%);
   color:  #1db954;
-}
-
-.fa-4x{
-  font-size: 3em;
 }
 
 .overlay{
@@ -61,4 +57,12 @@ h4{
 }
 #popular_artists .overlay{
   border-radius: 0;
+}
+
+
+/* screen lg desktop (large) */
+@media screen and (min-width: 1860px) {
+  .fa-4x{
+    font-size: 6em;
+  }
 }

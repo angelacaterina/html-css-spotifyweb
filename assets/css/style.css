@@ -79,6 +79,7 @@ aside.main_menu{
   background-color: black;
   flex-direction: column;
   justify-content: space-between;
+  overflow-y: auto;
 }
 
 /* .logo_menu */
@@ -149,13 +150,12 @@ aside.main_menu{
 }
 
 .playlist ul{
-  height: 60%;
-  overflow-y: scroll;
+  height: 40%;
+  overflow-y: auto;
 }
 /* .main_menu_footer */
 .main_menu_footer{
   padding: 0 20px;
-  overflow-y: hidden;
 }
 
 /* app*/
