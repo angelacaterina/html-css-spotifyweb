@@ -52,7 +52,7 @@ a:hover{
 .ml_1{
   margin-left: 1rem;
 }
-.m_3{
+.my_3{
   margin: 3rem 0;
 }
 
@@ -78,7 +78,6 @@ aside.main_menu{
   background-color: black;
   flex-direction: column;
   justify-content: space-between;
-  overflow-y: auto;
 }
 
 /* .logo_menu */
@@ -139,7 +138,7 @@ aside.main_menu{
 
 /* .main_menu_footer */
 .main_menu_footer{
-  padding: 0 20px 10px;
+  padding: 0 20px;
   overflow-y: hidden;
 }
 
@@ -156,6 +155,7 @@ aside.main_menu{
 /*.profilo*/
 .profilo{
   padding-top: 5px;
+  padding-bottom: 10px;
 }
 .profilo a,
 .app a{
@@ -241,26 +241,30 @@ hr{
   height: auto;
   margin-bottom: 2rem;
 }
+.card{
+  position: relative;
+}
 
 .image_play{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: white;
 }
 
 .overlay{
+  display: none;
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  height: 180px;
-  color: white;
-  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }
-.overlay:hover{
-  opacity: 1;
+.card:hover .overlay{
+  display: block;
+  cursor: pointer;
 }
 
 #recently_player .items,
@@ -349,14 +353,6 @@ footer#site_footer i{
   height: 5px;
   border-radius: 10px;
 }
-.bg_lightgrey_volume{
-  background-color: lightgrey;
-  width: 100px;
-  height: 5px;
-  border-radius: 10px;
-  margin-left: 10px;
-  justify-content: flex-end;
-}
 .bg_grey{
   background-color: grey;
   width: 20%;
@@ -371,13 +367,7 @@ footer#site_footer i{
  left: 70px;
  color: grey;
 }
-.circle_volume{
- display: none;
- position: absolute;
- top: -7px;
- left: 5px;
- color: grey;
-}
+
 .playbar:hover .circle,
 .bg_lightgrey_volume:hover .circle_volume{
  display: block;
@@ -394,6 +384,23 @@ footer#site_footer i{
   justify-content: flex-end;
   align-items: center;
 }
+
+.bg_lightgrey_volume{
+  background-color: lightgrey;
+  width: 100px;
+  height: 5px;
+  border-radius: 10px;
+  margin-left: 10px;
+  justify-content: flex-end;
+}
+.circle_volume{
+ display: none;
+ position: absolute;
+ top: -7px;
+ left: 5px;
+ color: grey;
+}
+
 .play_sing i:hover,
 .other i:hover{
   transform: scale(1.1);

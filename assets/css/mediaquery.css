@@ -162,4 +162,11 @@
   .mr_1{
     margin-right: 1.5rem;
   }
+
+  #recently_player{
+    justify-content: flex-start;
+  }
+  .items{
+    flex-basis: calc(100% / 6);
+  }
 }
