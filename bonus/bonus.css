@@ -22,12 +22,22 @@ h4{
   background: #282828;
   transition: 1s ease;
 }
+.items:hover .overlay{
+  display: block;
+  cursor: pointer;
+  transition: 1.5s;
+}
+
+.items p{
+  font-size: 12px;
+}
 
 .card{
   width: 100%;
   height: auto;
   position: relative;
 }
+
 .image_play{
   position: absolute;
   top: 95%;
@@ -41,16 +51,6 @@ h4{
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 }
-.items:hover .overlay{
-  display: block;
-  cursor: pointer;
-  transition: 1.5s;
-
-}
-
-.items p{
-  font-size: 12px;
-}
 
 #popular_artists img{
   border-radius: 0;
@@ -58,7 +58,6 @@ h4{
 #popular_artists .overlay{
   border-radius: 0;
 }
-
 
 /* screen lg desktop (large) */
 @media screen and (min-width: 1860px) {

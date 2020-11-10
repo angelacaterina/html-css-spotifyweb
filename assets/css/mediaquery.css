@@ -5,9 +5,9 @@
   }
 }
 
-/************
+/**************
 * MEDIA QUERY
-************/
+***************/
 /* screen xs iphone */
 @media screen and (max-width: 767px) {
   /* UTILITY */
@@ -26,11 +26,11 @@
     width: 55px;
   }
 
-  .logo_menu img:hover,
-  .main_menu_footer img:hover{
+  .menu_top img:hover,
+  .menu_bottom img:hover{
     transform: scale(1.2);
   }
-
+  /* .menu_top */
   /*.logo*/
   .logo{
     height: 50px;
@@ -47,10 +47,10 @@
     border-left: 0;
   }
 
-  /* .main_menu_footer */
+  /* .menu_bottom */
   /*.app*/
   .app{
-    border: 0;
+    border-bottom: 0;
   }
 
   /** SECTION **/
@@ -84,31 +84,28 @@
   }
 
   /*** FOOTER ***/
-  /** .sing **/
-  .sing,
+  .player,
   .play_sing,
   .other{
     flex-basis: calc(100% / 3);
   }
-  /* .card_sing */
-  .sing img{
-    height: 40px;
 
-  }
-  .card_sing{
+  /** .player **/
+  /* .sing */
+  .sing{
     width: 75%;
   }
-  .icons{
-    width: 20%;
-    justify-content: flex-end;
+  .sing img{
+    height: 40px;
   }
-  .card_sing p{
+  .sing p{
     margin-bottom: 0;
     line-height: 1;
   }
   /* .icons */
   .icons{
     width: 20%;
+    justify-content: flex-end;
   }
 }
 
@@ -133,7 +130,7 @@
    flex-basis: calc(100% / 2);
  }
 
- .playbar{
+ .play_bar{
    width: 80%;
  }
 }

@@ -13,9 +13,6 @@ body{
   display: table;
   clear: both;
 }
-.float_right{
-  float: right;
-}
 .float_left{
   float: left;
 }
@@ -82,7 +79,25 @@ aside.main_menu{
   overflow-y: auto;
 }
 
-/* .logo_menu */
+/* utility */
+.list-group a,
+.crea_playlist a,
+.playlist a,
+.app a{
+  color: #a3a3a3;
+}
+
+.list-group .home a,
+.list-group a:hover,
+.crea_playlist a:hover,
+.playlist a:hover,
+.app a:hover,
+.profilo a {
+  color: white;
+  cursor: pointer;
+}
+
+/* .menu_top*/
 /*.logo*/
 .logo{
   height: 80px;
@@ -103,17 +118,6 @@ aside.main_menu{
 .list-group .libreria:hover {
   border-left: 2px solid #ADFF2F;
 }
-
-.list-group .home a{
-  color: white;
-}
-.list-group a{
-  color: #a3a3a3;
-}
-.list-group a:hover {
-  color: white;
-}
-
 .list-group-item {
   background: none;
   padding: 5px 15px;
@@ -137,28 +141,20 @@ aside.main_menu{
   font-size: 14px;
 }
 
-.crea_playlist a,
-.playlist li {
-  color: #A3A3A3;
-  line-height: 2;
-}
-
-.crea_playlist a:hover,
-.playlist li:hover{
-  color: white;
-  cursor: pointer;
-}
-
 .playlist ul{
   height: 40%;
   overflow-y: auto;
 }
-/* .main_menu_footer */
-.main_menu_footer{
+.playlist li{
+  line-height: 2;
+}
+
+/* .menu_bottom*/
+.menu_bottom{
   padding: 0 20px;
 }
 
-/* app*/
+/*.app*/
 .app{
   padding-bottom: 5px;
   border-bottom: 1px solid white;
@@ -172,14 +168,6 @@ aside.main_menu{
 .profilo{
   padding-top: 5px;
   padding-bottom: 10px;
-}
-.profilo a,
-.app a{
-  color: #A3A3A3;
-}
-.profilo a:hover,
-.app a:hover{
-  color: white;
 }
 .profilo img{
   height: 20px;
@@ -249,9 +237,9 @@ hr{
   margin: 1px auto;
 }
 
-/*****************
-* OVERLAY SECTION
-*****************/
+/**************************
+* utility OVERLAY SECTION
+**************************/
 .items{
   width: 180px;
   height: auto;
@@ -290,16 +278,14 @@ hr{
   position: relative;
   cursor: pointer;
 }
-/********************
-*  /OVERLAY SECTION
-********************/
+/***************************
+*  /utility OVERLAY SECTION
+***************************/
 
 /* #recently_player */
 #recently_player{
   justify-content: space-between;
 }
-
-/* #created_for */
 
 /* #popular_artists */
 #popular_artists img{
@@ -317,26 +303,84 @@ footer#site_footer{
   background-color: #282828;
   z-index: 10;
   justify-content: space-between;
-
 }
 footer#site_footer i{
   margin: 0 5px;
 }
 
-/** .sing **/
-.sing{
+/* utility */
+.icons i:hover,
+.play_sing i:hover,
+.other i:hover{
+  transform: scale(1.3);
+}
+
+/*******************
+* utility PLAY BAR
+********************/
+.bg_lightgrey{
+  background-color: lightgrey;
+  width: 430px;
+  height: 5px;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.bg_lightgrey_volume{
+  background-color: lightgrey;
+  width: 100px;
+  height: 5px;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  justify-content: flex-end;
+}
+.bg_grey{
+  background-color: grey;
+  width: 20%;
+  height: 5px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.circle{
+ display: none;
+ position: absolute;
+ top: -7px;
+ left: 70px;
+ color: grey;
+}
+.circle_volume{
+ display: none;
+ position: absolute;
+ top: -7px;
+ left: 5px;
+ color: grey;
+}
+
+.play_bar:hover .circle,
+.bg_lightgrey_volume:hover .circle_volume{
+ display: block;
+}
+/********************
+* /utility PLAY BAR
+*********************/
+
+/** .player **/
+.player{
   width: 220px;
   margin: 15px 0 15px 10px;
   justify-content: space-between;
   align-items: center;
 }
+
+/* .sing */
+.sing{
+  width: 70%;
+}
 .sing img{
   height: 50px;
   margin-right: 10px;
-}
-/* .card_sing */
-.card_sing{
-  width: 70%;
 }
 /* .icons */
 .icons{
@@ -356,41 +400,15 @@ footer#site_footer i{
   height: 30px;
   align-items: center;
 }
-/* .playbar */
-.playbar{
+/* .play_bar */
+.play_bar{
   width: 100%;
   justify-content: center;
   align-items: center;
   flex-shrink: 1;
 }
-.bg_lightgrey{
-  background-color: lightgrey;
-  width: 430px;
-  height: 5px;
-  border-radius: 10px;
-}
-.bg_grey{
-  background-color: grey;
-  width: 20%;
-  height: 5px;
-  border-radius: 10px;
-  position: relative;
-}
-.circle{
- display: none;
- position: absolute;
- top: -7px;
- left: 70px;
- color: grey;
-}
-
-.playbar:hover .circle,
-.bg_lightgrey_volume:hover .circle_volume{
- display: block;
-}
-
-.playbar span{
-  margin: 0 20px;
+.play_bar span{
+  margin: 0 10px;
 }
 
 /** .other **/
@@ -399,25 +417,4 @@ footer#site_footer i{
   padding-right: 20px;
   justify-content: flex-end;
   align-items: center;
-}
-
-.bg_lightgrey_volume{
-  background-color: lightgrey;
-  width: 100px;
-  height: 5px;
-  border-radius: 10px;
-  margin-left: 10px;
-  justify-content: flex-end;
-}
-.circle_volume{
- display: none;
- position: absolute;
- top: -7px;
- left: 5px;
- color: grey;
-}
-
-.play_sing i:hover,
-.other i:hover{
-  transform: scale(1.1);
 }

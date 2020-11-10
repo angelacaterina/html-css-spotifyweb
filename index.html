@@ -22,7 +22,7 @@
     <div class="wrapper d-flex">
       <main id="main_content" class="d-flex">
         <aside class="main_menu d-flex">
-          <div class="logo_menu">
+          <div class="menu_top">
             <div class="logo d-flex">
               <a href="#"><img src="assets/img/logo.svg" alt="" class="d_none_xs"></a>
               <a href="#"><img src="assets/img/logo-small.svg" alt="" class="d_none_s"></a><!-- logo small -->
@@ -53,27 +53,23 @@
 
             <div class="playlist d_none_xs">
               <h5>PLAYLIST</h5>
-              <div class="crea_playlist">
-                <a href="#">
-                  <i class="fas fa-plus-square fa-2x fa-fw pr_1"></i>
-                  <span>Crea Playlist</span>
-                </a>
-              </div>
-
+              <a href="#" class="crea_playlist">
+                <i class="fas fa-plus-square fa-2x fa-fw pr_1"></i>
+                <span>Crea Playlist</span>
+              </a>
               <ul class="list-unstyled">
-                <li>Nuova Playlist</li>
-                <li>Nuova Playlist</li>
-                <li>Nuova Playlist</li>
-                <li>Nuova Playlist</li>
-                <li>Nuova Playlist</li>
-                <li>Nuova Playlist</li>
-                <li>Nuova Playlist</li>
+                <li><a href="#">Nuova Playlist</a></li>
+                <li><a href="#">Nuova Playlist</a></li>
+                <li><a href="#">Nuova Playlist</a></li>
+                <li><a href="#">Nuova Playlist</a></li>
+                <li><a href="#">Nuova Playlist</a></li>
+                <li><a href="#">Nuova Playlist</a></li>
               </ul>
             </div><!-- /.playlist -->
           </div>
-          <!-- /.logo_menu -->
+          <!-- /.menu_top -->
 
-          <div class="main_menu_footer">
+          <div class="menu_bottom">
             <div class="app">
               <a href="#">
                 <img src="assets/img/download.svg" alt="">
@@ -87,7 +83,7 @@
               </a>
             </div><!-- /.profilo -->
           </div>
-          <!-- /.main_menu_foote -->
+          <!-- /.menu_bottom -->
         </aside>
         <!-- /aside.main_menu -->
 
@@ -95,6 +91,7 @@
           <div class="subscribe_banner d-flex">
             <a href="#" class="btn btn-default" role="button">effettua l'upgrade</a>
           </div>
+          <!-- /.subscribe_banner -->
 
           <nav class="d-flex">
             <a href="#">in evidenza <hr></a>
@@ -104,6 +101,7 @@
             <a href="#">nuove uscite <hr></a>
             <a href="#">scopri <hr></a>
           </nav>
+          <!-- /nav -->
 
           <h2>Recently played</h2>
           <div id="recently_player" class="d-flex text-center my_3">
@@ -252,18 +250,19 @@
       <!-- /#main_content -->
 
       <footer id="site_footer" class="d-flex">
-        <div class="sing d-flex">
-          <div class="card_sing clearfix">
+        <div class="player d-flex">
+          <div class="sing clearfix">
             <img src="assets/img/recently/sinister.jpeg" alt="" class="float_left">
             <h6>Sinister</h6>
             <p class="d_none_480"><small>Brano nome</small></p>
-          </div><!-- /.card_sing -->
+          </div><!-- /.sing -->
           <div class="icons">
             <i class="far fa-heart fa-fw"></i>
             <i class="far fa-folder fa-fw"></i>
           </div><!-- /.icons -->
         </div>
-        <!-- /.sing -->
+        <!-- /.player -->
+
         <div class="play_sing d-flex">
           <div class="icons_play d-flex">
             <i class="fas fa-random fa-fw d_none_480"></i>
@@ -274,7 +273,7 @@
           </div>
           <!-- /.icons_play -->
 
-          <div class="playbar d-flex">
+          <div class="play_bar d-flex">
             <span class="d_none_480">0:25</span>
             <div class="bg_lightgrey">
               <div class="bg_grey">
@@ -285,9 +284,10 @@
             </div>
             <span class="d_none_480">4:35</span>
           </div>
-          <!-- /.playbar -->
+          <!-- /.play_bar -->
         </div>
         <!-- /.play_sing -->
+
         <div class="other d-flex">
           <i class="fas fa-list-ul fa-fw"></i>
           <i class="fas fa-tv fa-fw d_none_480"></i>
@@ -301,9 +301,11 @@
           </div>
         </div>
         <!-- /.other -->
+
         <!-- /.player -->
       </footer>
       <!-- /#site_footer -->
+      
     </div>
     <!-- /.wrapper -->
   </body>
